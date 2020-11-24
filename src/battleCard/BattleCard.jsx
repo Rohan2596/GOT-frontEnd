@@ -15,7 +15,7 @@ export class BattleCard extends Component {
 
     componentDidUpdate(prevProps) {
         if (this.props.message !== prevProps.message) {
-            BattleService.getBattles(this.props.message).then((data) => {
+          new  BattleService().getBattles(this.props.message).then((data) => {
                 console.log(data.data.data.data);
                 this.setState({ cards: data.data.data.data })
 

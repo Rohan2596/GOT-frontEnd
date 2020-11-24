@@ -1,7 +1,5 @@
-const axios = require('axios');
-const {apiUrl,getSearch}=require('../services/constant');
-
-
+import axios from 'axios';
+import { apiUrl,getSearch } from "../services/constant";
 export default class BattleService {
 
     getBattles = (search) => {
@@ -9,7 +7,7 @@ export default class BattleService {
             method: "GET",
             url: `${apiUrl}${getSearch}` + search ,
         });
-    };
+    }
     
 
 
