@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import { BattleCard } from '../battleCard/BattleCard';
-import '/home/admin1/Desktop/BackEndProjects/GOTBattle-application/battle-frontend/src/App.css';
+import '/home/admin1/Desktop/FrontEndProjects/battle-frontend/src/App.css';
 export class Search extends Component{
 
     constructor(props){
