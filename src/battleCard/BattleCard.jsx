@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import BattleSerVice from "../services/battleApi.service";
-import '/home/admin1/Desktop/FrontEndProjects/battle-frontend/src/App.css';
+import '../../src/App.css';
 export class BattleCard extends Component {
 
     constructor(props) {
@@ -23,7 +23,7 @@ export class BattleCard extends Component {
                 console.log(err);
             })
         }
-      }
+    }
     render() {
 
         var displayAllCards = this.state.cards.map((item, i) => {
