@@ -2,7 +2,7 @@ const axios = require('axios');
 const {apiUrl,getSearch}=require('../services/constant');
 
 
-class BattleService {
+export default class BattleService {
 
     getBattles = (search) => {
         return axios({
@@ -15,4 +15,3 @@ class BattleService {
 
 
 }
-module.exports=new BattleService();

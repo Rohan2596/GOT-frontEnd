@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BattleSerVice from "../services/battleApi.service";
+import BattleService from '../services/battleApi.service';
 import '../../src/App.css';
 export class BattleCard extends Component {
 
@@ -15,7 +15,7 @@ export class BattleCard extends Component {
 
     componentDidUpdate(prevProps) {
         if (this.props.message !== prevProps.message) {
-            BattleSerVice.getBattles(this.props.message).then((data) => {
+            BattleService.getBattles(this.props.message).then((data) => {
                 console.log(data.data.data.data);
                 this.setState({ cards: data.data.data.data })
 
